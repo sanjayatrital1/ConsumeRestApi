@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+</head>
+<body>
+<form th:action="@{/}" method="post" th:object="${country}">
+    <p>
+        Country Code: <input th:field="*{countryCode}"/>
+    </p>
+    <p>
+        Match Region: <input th:field="*{matchRegion}"/>
+    </p>
+    <p>
+        Income Level: <input th:field="*{incomeLevel}"/>
+    </p>
+    <p>
+        Lending Type: <input th:field="*{lendingType}"/>
+    </p>
+    <input type="submit" value="Search">
+</form>
+
+
+</body>
+</html>
