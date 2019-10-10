@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WorldBank Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<div id="content-main">
+    <div id="content-form">
+        <form action="#" id="form-search">
+            Country Code: <input id="input-countryCode" name="countryCode" type="text"/><br/>
+            Region: <input id="input-region" name="region" type="text"/><br/>
+            Income Level: <input id="input-incomeLevel" name="incomeLevel" type="text"/><br/>
+            Lending Type: <input id="input-lendingType" name="lendingType" type="text"/><br/>
+            <input id="button-search" type="button" value="Search"><br/>
+        </form>
+    </div>
+
+    <div id="content-table" style="display: none;">
+        <table id="table-country">
+            <thead>
+            <tr>
+                <td>Country</td>
+                <td>Capital</td>
+            </tr>
+            </thead>
+            <tbody id="table-country-body">
+            <!-- ajax fill -->
+            </tbody>
+            <tr>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
